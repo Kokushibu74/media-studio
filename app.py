@@ -55,7 +55,7 @@ HTML = r"""
 <html lang="bn">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Anime Action · Media Metadata Studio</title>
+<title>Media Studio — Creative Workspace</title>
 <style>
 :root{color-scheme:dark;--bg:#10131a;--panel:#191e29;--line:#30394b;--text:#f3f5fa;--muted:#aab4c5;--accent:#83aaff}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px system-ui,-apple-system,sans-serif}
@@ -86,10 +86,81 @@ button:hover,.btn:hover{transform:translateY(-2px);filter:brightness(1.12);box-s
 @keyframes scan{0%{transform:translateY(0)}100%{transform:translateY(240px)}}
 @keyframes heroPulse{0%,100%{box-shadow:0 0 22px #4a50ff22}50%{box-shadow:0 0 38px #4a50ff55,0 0 18px #ff4fd833}}
 @keyframes riseIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+/* Professional MEMO-inspired home redesign */
+:root {
+ --bg:#080b14;--panel:#111827;--line:#28334a;
+ --text:#f5f7ff;--muted:#a1acc2;--accent:#8b9cff;
+}
+body {
+ background:radial-gradient(ellipse at 8% 0%,#24245b 0,transparent 35%),
+ radial-gradient(ellipse at 100% 15%,#10384a 0,transparent 32%),#080b14;
+ color:var(--text);font-family:Inter,system-ui,-apple-system,sans-serif;
+}
+main {max-width:1120px;margin:auto;padding:26px 18px 60px}
+.hero {
+ padding:clamp(24px,5vw,48px);border:1px solid #343e68;
+ border-radius:26px;background:linear-gradient(125deg,#1b2450 0%,#11182b 58%,#29163b 100%);
+ box-shadow:0 24px 70px #0005;animation:none;
+}
+.hero:after {display:none}
+.hero h1 {font-size:clamp(30px,6vw,52px);line-height:1.12;letter-spacing:-1.5px;margin:18px 0 14px}
+.hero .muted {max-width:680px;font-size:15px}
+.hero .tag {margin-top:12px}
+.card {
+ padding:clamp(18px,3vw,28px);margin-top:20px;border-radius:22px;
+ background:linear-gradient(145deg,#131c30,#0d1220);
+ border:1px solid #27344f;box-shadow:0 16px 40px #0002;animation:none;
+}
+.card h2 {font-size:clamp(20px,3vw,26px);letter-spacing:-.4px;margin-top:0}
+.card h3 {font-size:17px}
+.grid {gap:16px}
+label {font-size:14px;color:#dce4f5}
+input:not([type=checkbox]):not([type=file]),select,textarea {
+ min-height:48px;border-radius:12px;background:#090e19;
+ border:1px solid #303d58;padding:13px 14px;outline:none;
+}
+input:focus,select:focus,textarea:focus {
+ border-color:#8b9cff;box-shadow:0 0 0 3px #8b9cff20;
+}
+input[type=file] {width:100%;border:1px dashed #4b5c82;background:#0b1120;border-radius:13px}
+button,.btn {
+ border:0;border-radius:12px;padding:13px 20px;
+ background:linear-gradient(110deg,#a5b4fc,#67e8f9);
+ color:#101426;font-weight:800;box-shadow:0 8px 24px #818cf833;
+}
+button:hover,.btn:hover {filter:brightness(1.08);transform:translateY(-1px)}
+button:disabled {opacity:.65;cursor:wait}
+.tag {border-color:#384a70;background:#151e34;color:#cbd5ff;padding:6px 11px}
+.flash {border:1px solid #72532a;border-radius:12px}
+.result {border-radius:12px;border-color:#293750;line-height:1.65}
+footer {text-align:center;padding:18px 8px;line-height:1.8}
+a {color:#a5b4fc}
+@media(max-width:600px) {
+ main {padding:14px 12px 36px}
+ .hero {padding:24px 19px;border-radius:20px}
+ .hero h1 {letter-spacing:-.8px}
+ .card {padding:18px 15px;border-radius:17px}
+ button,.btn {width:100%;text-align:center}
+}
+@media(prefers-reduced-motion:reduce) {
+ *,*::before,*::after {animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
 </style></head><body><main>
-<div class="hero"><h1>⚡ ANIME ACTION <span style="color:#69f5ff">MEDIA STUDIO</span></h1><div class="muted">LOCAL SCAN // METADATA ANALYSIS // PRIVACY CLEANING</div>
-<p class="muted">এই অ্যাপটি আপনার Termux ডিভাইসেই চলে। ফাইলগুলো কোনো ক্লাউড সার্ভারে পাঠানো হয় না।</p>
-<span class="tag">Images</span><span class="tag">Videos</span><span class="tag">ExifTool</span><span class="tag">FFprobe</span></div>
+<div class="hero">
+<div class="tag">✦ CREATIVE WORKSPACE · MEDIA TOOLS</div>
+<h1>Make your media<br><span style="background:linear-gradient(90deg,#a5b4fc,#67e8f9,#e9a8ff);-webkit-background-clip:text;background-clip:text;color:transparent">cleaner & clearer.</span></h1>
+<p class="muted">ছবি ও ভিডিওর মেটাডাটা বিশ্লেষণ করুন, প্রয়োজনীয় তথ্য দেখুন এবং পরিষ্কার আউটপুট তৈরি করুন—একটি সহজ, ব্যক্তিগত ও আধুনিক ওয়ার্কস্পেসে।</p>
+<div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:22px">
+<span class="tag">◈ Image Analysis</span><span class="tag">◈ Video Metadata</span><span class="tag">◈ Privacy Tools</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:30px">
+<div style="padding:15px;border:1px solid #ffffff18;background:#ffffff08;border-radius:14px"><div style="font-size:23px">⌕</div><b>Analyze</b><div class="muted" style="font-size:13px">Metadata insights</div></div>
+<div style="padding:15px;border:1px solid #ffffff18;background:#ffffff08;border-radius:14px"><div style="font-size:23px">✧</div><b>Clean</b><div class="muted" style="font-size:13px">Supported metadata</div></div>
+<div style="padding:15px;border:1px solid #ffffff18;background:#ffffff08;border-radius:14px"><div style="font-size:23px">⬇</div><b>Export</b><div class="muted" style="font-size:13px">Download output</div></div>
+</div>
+</div>
 {% with messages = get_flashed_messages() %}{% for m in messages %}<div class="flash">{{m}}</div>{% endfor %}{% endwith %}
 <section class="card"><h2>১. ফাইল আপলোড ও পরীক্ষা</h2><p class="muted">সর্বোচ্চ ফাইল সাইজ: {{max_mb}} MB। সমর্থিত ছবি ও ভিডিও ফরম্যাট।</p>
 <form method="post" action="/process" enctype="multipart/form-data">
