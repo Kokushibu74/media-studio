@@ -176,3 +176,27 @@ media-studio/
 <sub>Local-first · Mobile-friendly · Practical</sub>
 
 </div>
+
+---
+
+## 💜 Support This Project
+
+<div align="center">
+
+### Enjoying Media Metadata Studio?
+
+If this project is useful to you, consider supporting its development. Your support helps with maintenance, improvements, testing, and future features.
+
+**Every contribution is appreciated. Thank you! ❤️**
+
+<!-- Replace the placeholders below with your real donation links. -->
+
+[![Donate](https://img.shields.io/badge/Support%20Development-Donate-7C3AED?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/YOUR_GITHUB_USERNAME)
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/YOUR_USERNAME)
+
+</div>
+
+> **Note:** Donation links are placeholders. Replace them with your own active support pages before publishing.
+
+---
