@@ -200,3 +200,22 @@ If this project is useful to you, consider supporting its development. Your supp
 > **Note:** Donation links are placeholders. Replace them with your own active support pages before publishing.
 
 ---
+
+
+---
+
+## 💜 Support This Project
+
+### Donate with USDT (TRC20)
+
+Support the continued development of Media Metadata Studio.
+
+**Network:** TRON (TRC20)
+
+```text
+TVFZWJe4sxwC1gcFB4P68SLBygmWNjFpSc
+```
+
+> Send USDT only through the TRON (TRC20) network. Verify the address before sending funds.
+
+---
