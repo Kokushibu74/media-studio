@@ -4,3 +4,13 @@ node_modules/
 !.env.example
 .sessions/
 sessions/
+
+# Local uploads, generated metadata/media, Python caches, and manual backups are not source artifacts.
+uploads/
+output/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.backup
+*.working_backup
