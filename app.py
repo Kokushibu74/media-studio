@@ -46,7 +46,9 @@ PHONE_PROFILES = {
     "other_model": "Other / custom model label"
 }
 app = Flask(__name__)
-app.secret_key = os.environ.get("MEDIA_STUDIO_SECRET", "change-this-local-secret")
+app.secret_key = os.environ.get("MEDIA_STUDIO_SECRET") or os.urandom(32)
+if not os.environ.get("MEDIA_STUDIO_SECRET"):
+    app.logger.warning("MEDIA_STUDIO_SECRET is unset; using an ephemeral per-process secret. Set a strong environment secret for stable sessions.")
 MAX_MB = int(os.environ.get("MEDIA_STUDIO_MAX_MB", "500"))
 app.config["MAX_CONTENT_LENGTH"] = MAX_MB * 1024 * 1024
 
