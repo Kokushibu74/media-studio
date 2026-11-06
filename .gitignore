@@ -14,3 +14,8 @@ __pycache__/
 .env.*
 *.backup
 *.working_backup
+
+# Local history database and legacy snapshots are not source artifacts.
+history.sqlite3
+app.py.before_*
+app.py.pre_*
